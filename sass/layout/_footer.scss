@@ -1,0 +1,46 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2f303a;
+
+    &__address {
+        margin-right: 70px;
+    }
+
+    &__box {
+        display: flex;
+        align-items: baseline;
+    }
+}
+
+.footer__icon {
+    fill: var(--text-title);
+    
+}
+
+.footer__title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--text-title);
+    margin-bottom: 20px;
+}
+
+.contacts-footer:hover,
+.contacts-footer:focus {
+    color: var(--text-link-act);
+    fill: var(--text-link-act);
+}
+.footer__content:last-child {
+    margin-left: auto;
+}
+
+.logo-footer {
+    color: var(--text-title);
+}
+
+.footer .logo {
+    display: block;
+    margin-bottom: 20px;
+}

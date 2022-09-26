@@ -1,0 +1,128 @@
+.reqister-form-group {
+    margin-bottom: 20px;
+}
+
+.reqister-form-title {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    color: var(--text-color-main);
+}
+
+.reqister-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.reqister-form-input {
+    width: 100%;
+    padding: 11px 42px;
+    fill: var(--text-color-main);
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: transparent;
+    transition: border var(--transition);
+
+    & {
+        height: 40px;
+    }
+}
+.reqister-form-message {
+    width: 100%;
+    height: 120px;
+    padding: 12px 16px;
+    fill: var(--text-color-main);
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: transparent;
+    transition: border var(--transition);
+    resize: none;
+}
+
+.reqister-form-input:focus,
+.reqister-form-message:focus,
+.reqister-form-input:hover,
+.reqister-form-message:hover {
+    border: 1px solid var(--text-link-act);
+}
+
+.reqister-form-label {
+    text-align: left;
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+}
+
+.reqister-form-wrap {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.reqister-form-wrap:last-child {
+    margin-bottom: 0;
+}
+
+.position-icon {
+    position: relative;
+}
+
+.reqister-form-input:focus+.reqister-form-icon,
+.reqister-form-input:hover+.reqister-form-icon {
+    fill: var(--text-link-act);
+}
+
+.reqister-form-icon {
+    transition: fill var(--transition);
+}
+
+.reqister-form-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.reqister-form-agreement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.reqister-checkbox:hover+.reqister-check .reqister-form-uncheck,
+.reqister-checkbox:focus+.reqister-check .reqister-form-uncheck {
+    fill: var(--text-link-act);
+}
+
+.reqister-checkbox:checked+.reqister-check .reqister-form-check {
+    opacity: 1;
+}
+
+.reqister-checkbox:checked+.reqister-check .reqister-form-uncheck {
+    opacity: 0;
+}
+
+.checkbox-text {
+    user-select: none;
+}
+
+.checkbox-link {
+    color: var(--text-link-act);
+    text-underline-position: under;
+}
+
+.reqister-form-check {
+    opacity: 0;
+    transition: opacity var(--transition);
+}
+
+.reqister-form-uncheck {
+    transition: fill var(--transition);
+}

@@ -1,0 +1,40 @@
+.portfolio__list {
+  --card-item: 3;
+} 
+ .portfolio__link {
+  display: block;
+  transition: box-shadow var(--transition);
+
+            &:hover,
+            &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}
+       .portfolio__link:hover .overlay-text,
+       .portfolio__link:focus .overlay-text {
+        transform: translateY(0%);
+        } 
+
+.portfolio__filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  gap: 8px;
+}
+.portfolio__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+  color: var(--text-color-main);
+}
+.portfolio__text {
+  font-size: 16px;
+  line-height: 1.88;
+}
+.portfolio__block {
+  border: 1px solid var(--border-work);
+  padding: 20px 24px;
+} 

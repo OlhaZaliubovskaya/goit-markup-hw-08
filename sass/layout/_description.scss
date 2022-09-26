@@ -1,0 +1,22 @@
+.description__list {
+    display: flex;
+    gap: 30px;
+}
+
+.description__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--bgcolor-team);
+    border-radius: 4px;
+}
+.description__item {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: var(--text-color-main);
+}

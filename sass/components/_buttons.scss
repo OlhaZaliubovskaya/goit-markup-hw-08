@@ -1,0 +1,67 @@
+.btn {
+    cursor: pointer;
+    font-family: inherit;
+    }
+.hero-btn {
+    min-width: 200px;
+    min-height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--text-link-act);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--text-title);
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    transition: background-color var(--transition);
+    display: flex;
+    justify-content: center;
+
+
+        &:hover,
+        &:focus { background-color: var(--bgcolor-btn);
+        }
+}
+
+.filter-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    padding: 6px 22px;
+    border: 0;
+    color: var(--text-color-main);
+    background-color: var(--bgcolor-team);
+    transition: background-color var(--transition), color var(--transition),
+    box-shadow var(--transition);
+    border-radius: 4px;
+
+        &:hover,
+        &:focus {
+            color: #ffffff;
+            background-color: var(--text-link-act);
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+                0px 2px 2px rgba(0, 0, 0, 0.12);
+        }
+}
+
+.current {
+    color: var(--text-title);
+    background-color: var(--text-link-act);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+
+        
+        &:hover,
+        &:focus {
+                color: #ffffff;
+                background-color: var(--text-link-act);
+                box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+                    0px 2px 2px rgba(0, 0, 0, 0.12);
+            }
+}
