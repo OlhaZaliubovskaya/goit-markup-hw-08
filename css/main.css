@@ -85,7 +85,6 @@ img {
     width: 480px;
     margin-left: auto;
     margin-right: auto;
-    background-color: aqua;
   }
 }
 @media screen and (min-width: 768px) {
@@ -440,19 +439,14 @@ body {
 
 @media screen and (max-width: 767px) {
   .mobile-menu {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     z-index: 100;
     width: 100%;
     height: 100%;
     opacity: 0;
-    visibility: hidden;
     pointer-events: none;
-  }
-  .mobile-menu__close-icon {
-    width: 18px;
-    height: 18px;
   }
   .mobile-menu.is-open {
     opacity: 1;
@@ -469,13 +463,25 @@ body {
     line-height: 0;
     margin-right: auto;
   }
-  .mobile-menu__container {
-    position: relative;
-    padding-left: 40px;
+  .open-mobile-menu.is-open .mobile-menu__btn {
+    display: none;
+  }
+  .mobile-menu__close-btn {
+    display: none;
+  }
+  .open-mobile-menu.is-open .mobile-menu__close-btn {
+    display: block;
+  }
+  .mobile__nav-link {
+    color: #212121;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
   }
 }
 @media screen and (min-width: 768px) {
-  .mobile-menu {
+  .mobile__menu {
     display: none;
   }
 }
@@ -483,12 +489,7 @@ body {
   display: none;
 }
 
-.open-mobile-menu-btn__icon {
-  width: 24px;
-  height: 16px;
-}
-
-.open-mobile-menu-btn {
+.open-mobile-menu {
   line-height: 0;
   border: none;
   background-color: transparent;

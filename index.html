@@ -50,29 +50,56 @@
         </ul>
          <!-- мобільне вікно -->
         <!-- мобільне вікно -->
-          <button type="button" class="open-mobile-menu-btn" data-menu-open>
-          <svg class="open-mobile-menu-btn__icon">
-            <use href="./symbol-defs.svg#icon-menu_24px"></use>
+          <div class="mobile__menu">
+          <button type="button" class="open-mobile-menu" data-menu-button aria-expanded="false" data-menu-button
+          aria-controls="menu__controls">
+          <svg width="40px" height="40px" aria-label="Переключатель мобильного окна">
+            <use class="mobile-menu__btn" href="./symbol-defs.svg#icon-menu_24px"></use>
+            <use class="mobile-menu__close-btn" href="./symbol-defs.svg#icon-Vector"></use>
           </svg>
         </button>
-        <div class="mobile-menu"data-menu>
-        <div class="container mobile-menu__container">
-          <button class="mobile-menu__close-btn"data-menu-close >
-            <svg class="mobile-menu__close-icon">
-              <use href="./symbol-defs.svg#icon-Vector"></use>
-            </svg>
-          </button>
-          <ul class="list">
-            <li>
-              <a class="link" href="">Студія</a>
+
+        <div class="mobile-menu" id="menu__controls" data-menu>
+          <ul class="mobile__nav-list">
+            <li class="mobile__nav-item">
+              <a class="mobile__nav-link current" href="./index.html">Студія</a>
             </li>
-            <li>
-              <a class="link" href="">Портфоліо</a>
+            <li class="mobile__nav-item">
+              <a class="mobile__nav-link" href="./portfolio.html">Портфоліо</a>
             </li>
-            <li>
-              <a class="link" href="">Контакти</a>
+            <li class="mobile__nav-item">
+              <a class="mobile__nav-link" href="#">Контакти</a>
             </li>
           </ul>
+        <div class="container mobile-menu__container">
+          <ul class="mobile__contacts">
+              <li class="mobile__contacts-item">
+                <a class="mobile__nav-link phone" href="tel:+380961111111">
+                  +38 096 111 11 11
+                </a>
+              </li>
+              <li class="mobile__contacts-item">
+                <a class="mobile__nav-link mail" href="mailto:info@devstudio.com">
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            
+             <ul class="mobile__social">
+              <li class="mobile__social-item"><a class="mobile__social-links" href="#"></a>
+                Instagram
+              </li>
+              <li class="mobile__social-item"><a class="mobile__social-links" href="#"></a>
+                Twitter
+              </li>
+              <li class="mobile__social-item"><a class="mobile__social-links" href="#"></a>
+                Facebook
+              </li>
+              <li class="mobile__social-item"><a class="mobile__social-links" href="#"></a>
+                Linkedin
+              </li>
+            </ul>
+        </div>
         </div>
       </div>
     </header>
