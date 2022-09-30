@@ -20,7 +20,7 @@
   </head>
   <body>
     <!-- Шапка сайту -->
-    <header class="header">
+      <header class="header">
       <div class="container header__container">
         <a class="link logo" href="">Web<span class="logo-header">Studio</span></a>
         <nav class="nav">
@@ -48,18 +48,44 @@
             >
           </li>
         </ul>
+         <!-- мобільне вікно -->
+        <!-- мобільне вікно -->
+          <button type="button" class="open-mobile-menu-btn" data-menu-open>
+          <svg class="open-mobile-menu-btn__icon">
+            <use href="./symbol-defs.svg#icon-menu_24px"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu"data-menu>
+        <div class="container mobile-menu__container">
+          <button class="mobile-menu__close-btn"data-menu-close >
+            <svg class="mobile-menu__close-icon">
+              <use href="./symbol-defs.svg#icon-Vector"></use>
+            </svg>
+          </button>
+          <ul class="list">
+            <li>
+              <a class="link" href="">Студія</a>
+            </li>
+            <li>
+              <a class="link" href="">Портфоліо</a>
+            </li>
+            <li>
+              <a class="link" href="">Контакти</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
       <!-- Hero -->
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button class="btn hero-btn" type="button" data-modal-open>Замовити послугу</button>
         </div>
-      </section>
+      </section> -->
       <!-- Контент -->
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <h2 class="visually-hidden">Наші переваги</h2>
           <ul class="list card-set description__list">
@@ -101,9 +127,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- About -->
-      <section class="section about">
+      <!-- <section class="section about">
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="list about__list card-set">
@@ -113,7 +139,6 @@
                 <source media="(min-width: 1200px)" srcset="./images/img/work_desktop@1x.jpg 1x , ./images/img/work_desktop@2x.jpg 2x" type="image/jpg">
             <img src="./images/foto_1.jpg" alt="друкує на клаві" />
               </picture>
-              <!-- <img src="./images/foto_1.jpg" alt="друкує на клаві" width="370" height="294" /> -->
               <div class="about__title">
                 <p>Десктопні додатки</p>
               </div>
@@ -140,9 +165,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Teem -->
-      <section class="team section">
+      <!-- <section class="team section">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="list card-set">
@@ -429,9 +454,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- постійні клієнти -->
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <h2 class="section-title">Постійні клієнти</h2>
           <ul class="list card-set client__list">
@@ -480,9 +505,9 @@
           </ul>
         </div>
       </section>
-    </main>
+    </main> -->
     <!-- футер -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer__box">
         <div class="footer__address">
           <a class="link logo" href="">Web<span class="logo-footer">Studio</span></a>
@@ -576,9 +601,9 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <!-- Modal window -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn" type="button" data-modal-close>
           <svg class="modal-icon" width="11" height="11">
@@ -637,7 +662,8 @@
         </label>
         <button class="btn hero-btn" type="submit">Відправити</button>
       </div>
-    </div>
+    </div> -->
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
-  </body>
+    </body>
 </html>
