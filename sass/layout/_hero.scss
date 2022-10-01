@@ -4,23 +4,24 @@
     margin-left: auto;
     margin-right: auto;
 
-    @media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
             padding: 118px 60px;
             max-width: 480px;
             background-size: 480px 400px;
             background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
             url(../images/img/hero_mobile@2x.jpg);
             background-color: var(--bgcolor-hero);
-        }
-    @media screen and (min-device-pixel-ratio: 2),
+        
+@media screen and (min-device-pixel-ratio: 2),
                  screen and (min-resolution: 192dpi),
                  screen and (min-resolution: 2dppx) {
                     background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
                              url(../images/img/hero_mobile@2x.jpg);
                              
                  }
+                }
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
                  padding: 118px 204px;
                  width: 768px;
                  height: 400px;
@@ -36,10 +37,9 @@
                  url(../images/img/hero_tablet@2x.jpg);
                   
                 }
-                
                 }
 
-    @media screen and (min-width: 1199px) {
+@media screen and (min-width: 1199px) {
              padding: 200px 0;
     
              max-width: 1600px;
@@ -57,9 +57,11 @@
                  background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
                      url(../images/img/hero_desktop@2x.jpg);
              }
+                           
          }
-                 .hero__title {
-                    margin: 0;
+                 
+.hero__title {
+                     margin: 0;
                      margin-left: auto;
                      margin-right: auto;
                      margin-bottom: 30px;
@@ -69,22 +71,23 @@
                      letter-spacing: 0.06em;
                      text-transform: uppercase;
                      color: var(--text-title);
+
+@media screen and (max-width: 1199px) {
+                            font-size: 26px;
+                            line-height: 1.61;
+                        }
+
+// @media screen and (min-width: 696px) {
+//                             max-width: 696px;
+//                         }
+                 
                  }
         
-                 @media screen and (max-width: 1199px) {
-                     font-size: 26px;
-                     line-height: 1.61;
-                 }
-        
-                 @media screen and (min-width: 696px) {
-                     max-width: 696px;
-                 }
 .hero-btn {
  display: flex;
+ @extend %button;
  }
 }
-
-
 
 // .hero {
 //     padding-top: 200px;

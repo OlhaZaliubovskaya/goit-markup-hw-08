@@ -1,52 +1,80 @@
-.contacts__link {
-    display: none;
+@media screen and (min-width: 768px) {
+.mobile__menu {
+        display: none;
+    }
+.header__container {
+    display: flex;
+    align-items: center;
 }
+.logo {
+    font-family: var(--second-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--text-link-act);
+      
+      &-header {
+        color: var(--logo-color);
+      }
+    }
+
+.header .logo {
+
+      @media screen and (min-width: 1200px) {
+        margin-right: 93px;
+      }
+
+}  
+
+
+}
+contacts__link {
+      display: flex;
+      align-items: center;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      transition: color var(--transition);
+    
+    &:hover,
+    &:focus {
+    color: var(--text-link-act);
+    fill: var(--text-link-act);
+     }
+     }
+
+.contact__item {
+          display: flex;
+          align-items: center;
+          @media screen and (min-width: 1200px) {
+            display: flex;
+          }
+         }
+.header {
+            font-weight: 500;
+            line-height: 1.14;
+            letter-spacing: 0.02em;
+            border-bottom: 1px solid var(--border);
+          }
+
+.header__list {
+            display: flex;
+            margin-right: auto;
+            gap: 50px;
+          }
+          
 
 // .open-mobile-menu-btn__icon {
 //     width: 24px;
 //     height: 16px;
 // }
 
-.open-mobile-menu {
-    line-height: 0;
-    border: none;
-    background-color: transparent;
-    padding: 0;
 
+
+.header__list {
+  display: flex;
+  margin-right: auto;
+  gap: 50px;
 }
-
-.header__container {
-    display: flex;
-    align-content: center;
-    justify-content: space-between;
-}
-
-.header__container {
-    padding-top: 16px;
-    padding-bottom: 16px;
-}
-
-.nav__link {
-    display: none;
-}
-
-// .header {
-//   font-weight: 500;
-//   line-height: 1.14;
-//   letter-spacing: 0.02em;
-//   border-bottom: 1px solid var(--border);
-// }
-
-// .header__container {
-//   display: flex;
-//   align-items: center;
-// }
-
-// .header__list {
-//   display: flex;
-//   margin-right: auto;
-//   gap: 50px;
-// }
 
 // .header__contacts {
 //   display: flex;
@@ -55,13 +83,6 @@
 //   gap: 30px;
 // }
 
-// .header .logo {
-//   margin-right: 93px;
-// }
-
-.logo-header {
-  color: var(--logo-color);
-}
 
 // .contacts__link {
 //   display: flex;
