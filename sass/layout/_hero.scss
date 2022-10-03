@@ -1,4 +1,4 @@
-@import './buttons';
+@import '../components/buttons';
 
 .hero {
     margin-left: auto;
@@ -41,7 +41,8 @@
 
 @media screen and (min-width: 1199px) {
              padding: 200px 0;
-    
+    // background-size: contain;
+}
              max-width: 1600px;
              height: 600px;
     
@@ -85,9 +86,8 @@
         
 .hero-btn {
  display: flex;
- @extend %button;
  }
-}
+
 
 // .hero {
 //     padding-top: 200px;

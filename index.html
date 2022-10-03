@@ -53,7 +53,7 @@
           <div class="mobile__menu">
           <button type="button" class="open-mobile-menu" data-menu-button aria-expanded="false" data-menu-button
           aria-controls="menu__controls">
-          <svg width="40px" height="40px" aria-label="Переключатель мобильного окна">
+          <svg width="22px" height="22px" aria-label="Переключатель мобильного окна">
             <use class="mobile-menu__btn" href="./symbol-defs.svg#icon-menu_24px"></use>
             <use class="mobile-menu__close-btn" href="./symbol-defs.svg#icon-Vector"></use>
           </svg>
@@ -112,8 +112,8 @@
         </div>
       </section>
       <!-- Контент -->
-      <!-- <section class="section">
-        <div class="container">
+      <section class="section">
+        <div class="container description__container">
           <h2 class="visually-hidden">Наші переваги</h2>
           <ul class="list card-set description__list">
             <li class="card-item">
@@ -123,7 +123,7 @@
                 </svg>
               </div>
               <h3 class="description__item">УВАГА ДО ДЕТАЛЕЙ</h3>
-              <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+              <p class="description__caption">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
             </li>
             <li class="card-item">
               <div class="description__box">
@@ -132,7 +132,7 @@
                 </svg>
               </div>
               <h3 class="description__item">ПУНКТУАЛЬНІСТЬ</h3>
-              <p>Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+              <p class="description__caption">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
             </li>
             <li class="card-item">
               <div class="description__box">
@@ -141,7 +141,7 @@
                 </svg>
               </div>
               <h3 class="description__item">ПЛАНУВАННЯ</h3>
-              <p>Так само консультація з широким активом значною мірою зумовлює.</p>
+              <p class="description__caption">Так само консультація з широким активом значною мірою зумовлює.</p>
             </li>
             <li class="card-item">
               <div class="description__box">
@@ -150,13 +150,13 @@
                 </svg>
               </div>
               <h3 class="description__item">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-              <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+              <p class="description__caption">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- About -->
-      <!-- <section class="section about">
+      <section class="section about">
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="list about__list card-set">
@@ -192,10 +192,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Teem -->
-      <!-- <section class="team section">
-        <div class="container">
+      <section class="team section">
+        <div class="container ">
           <h2 class="section-title">Наша команда</h2>
           <ul class="list card-set">
             <li class="team__card card-item">
@@ -211,6 +211,7 @@
                 src="./images/igor.jpg"
                 alt="продукт менеджер" />
               </picture>
+              <div class="team__wrapper">
               <h3 class="team__name">Ігор Дем'яненко</h3>
               <p class="team__prof">Product Designer</p>
               <ul class="list social">
@@ -267,6 +268,7 @@
                   </a>
                 </li>
               </ul>
+              </div>
             </li>
             <li class="team__card card-item">
             <picture>
@@ -281,6 +283,7 @@
                 src="./images/olga.jpg"
                 alt="фрондент" />
               </picture>
+              <div class="team__wrapper">
               <h3 class="team__name">Ольга Рєпіна</h3>
               <p class="team__prof">Frontend Developer</p>
               <ul class="list social">
@@ -337,6 +340,7 @@
                   </a>
                 </li>
               </ul>
+               </div>
             </li>
             <li class="team__card card-item">
               <picture>
@@ -352,6 +356,7 @@
                 alt="маркейтінг"
               />
               </picture>
+              <div class="team__wrapper">
               <h3 class="team__name">Микола Тарасов</h3>
               <p class="team__prof">Marketing</p>
               <ul class="list social">
@@ -408,11 +413,12 @@
                   </a>
                 </li>
               </ul>
+              </div>
             </li>
             <li class="team__card card-item">
               <picture>
-                <source media="(max-width: 767px)" srcset=" ./images/img/mihail_mobile@1x.webp 1x , ./images/img/mihail_mobile@2x.webp 2x" type="image/webp">
-                <source media="(min-width: 768px)" srcset=" ./images/img/mihail_tablet@1x.webp 1x , ./images/img/mihaili_tablet@2x.webp 2x" type="image/webp">
+                <source media="(max-width: 767px)" srcset="./images/img/mihail_mobile@1x.webp 1x , ./images/img/mihail_mobile@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 768px)" srcset="./images/img/mihail_tablet@1x.webp 1x , ./images/img/mihail_tablet@2x.webp 2x" type="image/webp">
                 <source media="(min-width: 1200px)" srcset=" ./images/img/mihail_desktop@1x.webp 1x , ./images/img/mihail_desktop@2x.webp 2x" type="image/webp">
                 <source media="(max-width: 767px)" srcset=" ./images/img/mihail_mobile@1x.jpg 1x , ./images/img/mihail_mobile@2x.jpg 2x" type="image/jpg">
                 <source media="(min-width: 768px)" srcset=" ./images/img/mihail_tablet@1x.jpg 1x , ./images/img/mihail_tablet@2x.jpg 2x" type="image/jpg">
@@ -422,6 +428,7 @@
                 src="./images/muha.jpg"
                 alt="дизайнер" />
               </picture>
+              <div class="team__wrapper">
               <h3 class="team__name">Михайло Єрмаков</h3>
               <p class="team__prof">UI Designer</p>
               <ul class="list social">
@@ -478,15 +485,16 @@
                   </a>
                 </li>
               </ul>
+              </div>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- постійні клієнти -->
-      <!-- <section class="section">
+      <section class="section">
         <div class="container">
           <h2 class="section-title">Постійні клієнти</h2>
-          <ul class="list card-set client__list">
+          <ul class="list card-set">
             <li class="card-item">
               <a class="link client__link" href="" aria-label="logo">
                 <svg class="client__icon" width="106" height="60">
@@ -532,9 +540,9 @@
           </ul>
         </div>
       </section>
-    </main> -->
+    </main>
     <!-- футер -->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer__box">
         <div class="footer__address">
           <a class="link logo" href="">Web<span class="logo-footer">Studio</span></a>
@@ -628,7 +636,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <!-- Modal window -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">

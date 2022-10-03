@@ -4,6 +4,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    
 }
 
 .mobile-menu.is-open {
@@ -16,8 +17,13 @@
         overflow-y: scroll;
         z-index: 2;
         padding: 32px 40px;
+
+        
     }
 
+.mobile__nav-list {
+   padding: 0; 
+}
 
  .open-mobile-menu {
      position: absolute;
@@ -31,6 +37,12 @@
      fill: #212121;
 
  }
+ .mobile-menu__container {
+    padding: 0;
+ }
+//  .mobile__social-link {
+//     padding: 0;
+//  }
 
 // .mobile-menu__btn:hover
 // .mobile-menu__close-btn:hover {
@@ -39,16 +51,16 @@
 //     }
 
 .mobile-menu__close-btn {
-    position: absolute;
-    top: 21px;
-    right: 25px;
+    margin: 21px 25px 0 0;
+    position: fixed;
+    width: 22px;
+    height: 22px;
     background-color: transparent;
-    // width: 19px ;  
-    // height: 19px;
     border: 0;
     padding: 0;
     line-height: 0;
     margin-right: auto;
+   
 }
 
 .open-mobile-menu.is-open .mobile-menu__btn {
@@ -76,13 +88,13 @@
     
          .mobile-menu__container {
              position: relative;
-             padding-left: 40px;
          }
 }
  
 
  .mobile__contacts {
      margin-bottom: 48px;
+     padding: 0;
  }
 
  .mobile__social {
@@ -130,6 +142,8 @@
      letter-spacing: 0.02em;
      color: #757575;
  }
+
+
 
 @media screen and (min-width: 768px) {
     .mobile__menu {

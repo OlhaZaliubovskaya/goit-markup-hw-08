@@ -1,36 +1,91 @@
+.team {
+background-color: var(--bgcolor-team);
+}
+
+.team__wrapper {
+    padding: 30px 0;
+}
+
+
+.card-set {
+     margin: 0;
+     margin-left: 0;
+     gap: 30px;
+
+
+     @media screen and (min-width: 768px) {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+     }
+
+     @media screen and (min-width: 1200px) {
+         flex-wrap: nowrap;
+     }
+ }
+ 
+ 
+ .team__name {
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: var(--text-color-main);
+}
+
+ .team__prof {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+ }
+
 .team__card {
     background-color: var(--text-title);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
-
-.team {
-  background-color: var(--bgcolor-team);
-
-     &__prof,
-     &__name {
-        font-size: 16px;
-        line-height: 1.19;
-        text-align: center;
-    }
-} 
-
-.team__foto {
-  margin-bottom: 30px;
-}
-.team__name {
-  font-weight: 500;
-  margin-bottom: 10px;
-  color: var(--text-color-main);
-}
 .team .social {
-  margin-top: 16px;
-  margin-bottom: 30px;
-} 
- .social {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
+    margin-top: 16px;
+    margin-bottom: 30px;
 }
+
+
+// .social {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     gap: 10px;
+// }
+
+// .team {
+//     background-color: var(--bgcolor-team);
+
+//     &__prof,
+//     &__name {
+//         font-size: 16px;
+//         line-height: 1.19;
+//         text-align: center;
+//     }
+// }
+
+// .team__foto {
+//     margin-bottom: 30px;
+// }
+
+// .team__name {
+//     font-weight: 500;
+//     margin-bottom: 10px;
+//     color: var(--text-color-main);
+// }
+
+// .team .social {
+//     margin-top: 16px;
+//     margin-bottom: 30px;
+// }
+
+// .social {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     gap: 10px;
+// }
