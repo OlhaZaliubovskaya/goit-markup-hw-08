@@ -1,9 +1,19 @@
 .send {
-    display: flex;
+    @media screen and (min-width: 1119px) {
+        display: flex;
+        }
     gap: 12px;
 }
+
+
 .send-input {
-  
+  @media screen and (max-width: 769px) {
+    min-width: 358px;   
+    width: 100%;
+    margin-bottom: 20px;
+    }
+
+
     width: 358px;
     padding: 15px 16px;
     font-size: 16px;

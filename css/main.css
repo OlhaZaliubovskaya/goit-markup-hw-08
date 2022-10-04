@@ -103,6 +103,7 @@ body {
 @media screen and (max-width: 769px) {
   .address {
     text-align: center;
+    margin-bottom: 60px;
   }
 }
 .address-list {
@@ -199,8 +200,12 @@ body {
 }
 
 .send {
-  display: flex;
   gap: 12px;
+}
+@media screen and (min-width: 1119px) {
+  .send {
+    display: flex;
+  }
 }
 
 .send-input {
@@ -215,6 +220,13 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   outline: 0;
+}
+@media screen and (max-width: 769px) {
+  .send-input {
+    min-width: 358px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 
 .send-btn {
@@ -897,9 +909,6 @@ body {
   }
 }
 
-.description__item {
-  padding: 15px;
-}
 @media screen and (max-width: 1199px) {
   .description__item {
     flex-basis: 50%;

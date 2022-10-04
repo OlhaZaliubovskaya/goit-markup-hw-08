@@ -8,10 +8,12 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        
     }
 
     @media screen and (min-width: 1200px) {
         flex-wrap: nowrap;
+        
     }
 }
 // .social {
@@ -22,6 +24,9 @@
 // }
 
 .social-link {
+   
+
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,4 +46,6 @@
             background-color: var(--text-link-act);
             fill: var(--text-title);
         }
+
+
 }
