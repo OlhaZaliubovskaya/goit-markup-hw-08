@@ -2,7 +2,7 @@
 
     @media screen and (max-width: 769px) {
             width: 210px;
-            // height: 92px;
+          
         }
 
     display: flex;
@@ -20,6 +20,8 @@
         color: var(--text-link-act);
     }
 }
+
+
 
 .client__icon {
     fill: currentColor;

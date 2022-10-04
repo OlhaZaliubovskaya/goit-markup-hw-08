@@ -181,7 +181,6 @@ body {
 }
 
 .card-set {
-  display: flex;
   flex-wrap: wrap;
   gap: var(--cadr-gap);
 }
@@ -190,13 +189,25 @@ body {
     margin: 0;
     margin-left: 0;
     gap: 30px;
-    display: flex;
     flex-wrap: wrap;
   }
 }
 
 .card-item {
   flex-basis: calc((100% - (var(--card-item) - 1) * var(--cadr-gap)) / var(--card-item));
+}
+
+.list_card-set {
+  display: flex;
+  gap: var(--cadr-gap);
+}
+@media screen and (max-width: 769px) {
+  .list_card-set {
+    margin: 0;
+    margin-left: 0;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
 }
 
 .send {
