@@ -20,6 +20,7 @@
         left: 0px;
         top: 0px;
     }
+       
   }
 
 .logo {
@@ -53,6 +54,9 @@
     color: var(--text-link-act);
     fill: var(--text-link-act);
   }
+     @media screen and (min-width: 768px) and (max-width: 1199px) {
+      display: none;
+     }
     @media screen and (max-width: 769px) {
       display: none;
     }
@@ -96,10 +100,12 @@
   display: flex;
   margin-right: auto;
   gap: 50px;
+  
 
   @media screen and (max-width: 769px) {
       display: none;
     }
+       
 }
 // .contacts__link {
 //   display: flex;

@@ -679,6 +679,11 @@ body {
   color: var(--text-link-act);
   fill: var(--text-link-act);
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts__link {
+    display: none;
+  }
+}
 @media screen and (max-width: 769px) {
   .contacts__link {
     display: none;
@@ -820,6 +825,13 @@ body {
 .team .social {
   margin-top: 16px;
   margin-bottom: 30px;
+}
+
+.team__foto {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 @media screen and (min-width: 760px) {

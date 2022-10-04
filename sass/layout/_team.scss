@@ -68,9 +68,14 @@ background-color: var(--bgcolor-team);
 //     }
 // }
 
-// .team__foto {
-//     margin-bottom: 30px;
-// }
+.team__foto {
+    // margin-bottom: 30px;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+
+}
 
 // .team__name {
 //     font-weight: 500;
