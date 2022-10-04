@@ -1,9 +1,16 @@
 
-// .card-set {
-//     display: flex;
-//     flex-wrap: wrap;
-//     gap: var(--cadr-gap);
-// }
+.card-set {
+    @media screen and (max-width: 769px) {
+            margin: 0;
+            margin-left: 0;
+            gap: 30px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--cadr-gap);
+}
 
 .card-item {
    

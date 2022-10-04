@@ -96,6 +96,31 @@ body {
   color: var(--text-color);
 }
 
+.address {
+  font-style: inherit;
+  color: rgba(255, 255, 255, 0.6);
+}
+@media screen and (max-width: 769px) {
+  .address {
+    text-align: center;
+  }
+}
+.address-list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.address-link[target=_blank] {
+  color: var(--text-title);
+}
+.address-link {
+  transition: color var(--transition);
+}
+.address-link:hover, .address-link:focus {
+  color: var(--text-link-act);
+  fill: var(--text-link-act);
+}
+
 .btn {
   cursor: pointer;
   font-family: inherit;
@@ -152,6 +177,21 @@ body {
   color: #ffffff;
   background-color: var(--text-link-act);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--cadr-gap);
+}
+@media screen and (max-width: 769px) {
+  .card-set {
+    margin: 0;
+    margin-left: 0;
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .card-item {
@@ -389,9 +429,10 @@ body {
 }
 
 .social {
-  margin: 0;
-  margin-left: 0;
-  gap: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 @media screen and (min-width: 768px) {
   .social {
@@ -636,6 +677,17 @@ body {
   fill: currentColor;
 }
 
+.header__list {
+  display: flex;
+  margin-right: auto;
+  gap: 50px;
+}
+@media screen and (max-width: 769px) {
+  .header__list {
+    display: none;
+  }
+}
+
 .about {
   padding-top: 0;
 }
@@ -728,16 +780,25 @@ body {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 760px) {
+  .footer__box {
+    display: flex;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .footer__address {
+    margin-right: 70px;
+  }
+}
+
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
 }
-.footer__address {
-  margin-right: 70px;
-}
 .footer__box {
-  display: flex;
   align-items: baseline;
 }
 
@@ -752,6 +813,11 @@ body {
   text-transform: uppercase;
   color: var(--text-title);
   margin-bottom: 20px;
+}
+@media screen and (max-width: 769px) {
+  .footer__title {
+    text-align: center;
+  }
 }
 
 .contacts-footer:hover,
@@ -771,6 +837,11 @@ body {
 .footer .logo {
   display: block;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 769px) {
+  .footer .logo {
+    text-align: center;
+  }
 }
 
 .nav {
@@ -859,10 +930,6 @@ body {
   .description__item {
     text-align: left;
   }
-}
-
-.header__list {
-  display: none;
 }
 
 .header_contacts {
@@ -1004,6 +1071,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 92px;
+  width: 210px;
   border: 1px solid currentColor;
   border-radius: 4px;
   color: var(--icon-color);

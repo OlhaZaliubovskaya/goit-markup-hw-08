@@ -7,6 +7,10 @@
     
 }
 
+// .header__list {
+//     display: none;
+// }
+
 .mobile-menu.is-open {
         display: flex;
         flex-direction: column;
@@ -78,7 +82,6 @@
          .mobile__nav-link {
              font: Roboto;
              color: #212121;
-             ;
              font-weight: 500;
              font-size: 40px;
              line-height: 1.18;
