@@ -31,6 +31,18 @@
     opacity: 1;
     padding: 40px;
     transition: transform var(--transition), opacity var(--transition);
+    
+    @media screen and (max-width: 1199px) {
+            max-width: 450px;
+            max-height: 609px;
+            width: 100%;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            max-width: 528px;
+            max-height: 581px;
+            width: 100%;
+        }
 }
 
 .modal-btn {

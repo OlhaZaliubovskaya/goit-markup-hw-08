@@ -248,6 +248,11 @@ body {
   text-align: center;
   color: var(--text-color-main);
 }
+@media screen and (min-width: 1200px) {
+  .reqister-form-title {
+    line-height: 1.15;
+  }
+}
 
 .reqister-form {
   display: flex;
@@ -396,6 +401,20 @@ body {
   opacity: 1;
   padding: 40px;
   transition: transform var(--transition), opacity var(--transition);
+}
+@media screen and (max-width: 1199px) {
+  .modal {
+    max-width: 450px;
+    max-height: 609px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+    max-height: 581px;
+    width: 100%;
+  }
 }
 
 .modal-btn {
@@ -829,6 +848,7 @@ body {
 @media screen and (max-width: 769px) {
   .footer__title {
     text-align: center;
+    margin-top: 60px;
   }
 }
 
@@ -1080,11 +1100,15 @@ body {
   align-items: center;
   justify-content: center;
   height: 92px;
-  width: 210px;
   border: 1px solid currentColor;
   border-radius: 4px;
   color: var(--icon-color);
   transition: color var(--transition);
+}
+@media screen and (max-width: 769px) {
+  .client__link {
+    width: 210px;
+  }
 }
 .client__link:hover, .client__link:focus {
   color: var(--text-link-act);
